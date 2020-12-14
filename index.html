@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <!-- <style>
+    #panorama {
+        width: 1000px;
+        height: 1000px;
+    }
+    </style> -->
+</head>
+<body>
+
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    "panorama": "panorama2.jpg",
+    "autoLoad": true,
+    "title": "IFNMG Campus Avançado Janaúba",
+    "author": "Felipe Cézar",
+    "pitch": -79,
+    "yaw": -99,
+    "hfov": 100,
+
+    //"hotSpotDebug": true,
+    "hotSpots": [
+        {
+            "pitch": -70,
+            "yaw": -156,
+            "type": "info",
+            "text": "Bloco Adminstrativo"
+        },
+        {
+            "pitch": -75,
+            "yaw": -49,
+            "type": "info",
+            "text": "Bloco Salas de Aula"
+        },
+    ]
+
+});
+</script>
+
+</body>
+</html>
